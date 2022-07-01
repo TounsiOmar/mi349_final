@@ -1,0 +1,115 @@
+body{
+    background-color: #D99494; /*applies color to whole page*/
+
+}
+
+h1{
+    text-align: center; /*centers the text */
+    margin: 30px; /* applies padding to top and bottom of text box*/
+    margin-bottom: 125px; /* applies padding to only bottom of text box*/
+    border: 2px solid rgb(222, 180, 180);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+section{
+    display:flex;
+}
+article {
+    padding: 40px;
+    margin: 40px;
+}
+
+article:nth-of-type(2) {
+
+}
+
+article:nth-of-type(2) {
+    
+}
+
+
+img{
+    width: 100%;
+    opacity: 30%;
+}
+.container{
+    /*handles the entire container*/
+    position: relative;
+    margin: 0 auto; /* centers image in middle of screen*/
+    width: 200px; /*changes size (width and height) of img */
+    box-align: center; 
+}
+.upper{
+    position:relative;
+    top:-397px;
+    opacity: 0;
+    z-index: 2;
+
+}
+
+.upper:hover{
+    transition: all .3s linear;
+    opacity: 100;
+    z-index: 2;
+    
+}
+
+.torso{
+    position: relative;
+    top:-601px;
+    opacity: 0;
+    z-index: 1;
+    
+    
+}
+
+.torso:hover{
+    transition:all .3s linear;
+    opacity:100;
+    z-index: 1;
+    
+}
+
+.lower{
+    width: 53%;
+    background-color: none;
+    position: relative;
+    left:47px;
+    top:-864px;
+    opacity: 0;
+    z-index: 3;
+    
+}
+
+.lower:hover{
+    transition: all .3s linear;
+    opacity:100;
+    z-index: 3;
+    
+}
+
+
+.contacts{
+    top:-400px;
+    background-color: #f44336;
+    margin:0 auto;
+    width:400px;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.contacts li {
+    width: 30px;
+    display: inline-block;
+    padding: 20px 10px;
+}
+
+.contacts li a img:hover{
+    opacity: 0.5;
+    transition: opacity ease-in-out .2s;
+}
